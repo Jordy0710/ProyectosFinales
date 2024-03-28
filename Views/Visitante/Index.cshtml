@@ -1,0 +1,281 @@
+﻿@using Proyecto.Models;
+
+@model List<VisitanteCLS>
+
+
+
+
+
+
+@{
+
+          
+
+                ViewBag.Title = "";
+
+                Layout = "~/Views/Shared/_Layout.cshtml";
+            }
+
+
+
+
+
+<!-- Modal Ventana Flotante    GUARDAR  -->
+
+
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Visitante</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                            </div>
+
+                            <!-- ******************* caja de textos ******************** -->
+
+
+                            @using (Html.BeginForm("Agregar", "Visitante", FormMethod.Post, new { @id = "frmAgregar" }))
+
+                            {
+                                @Html.Hidden("Visitante")
+
+
+
+                                <div class="modal-body">
+                                    <div>
+                                        @Html.Label("Visitante")
+                                        @Html.TextBox("nombre", null, new { @class = "form-control" })
+
+                                        @*@Html.ValidationMessage("nombre", new { @class = "text-danger" })*@
+
+
+                                    </div>
+                                    <div>
+                                        @Html.Label("Dni")
+                                        @Html.TextBox("dni", null, new { @class = "form-control" })
+
+                                      @*  @Html.ValidationMessage("dni", new { @class = "text-danger" })*@
+
+
+
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+            <!-- botones  cerrar  o GUARDAR -->
+
+
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+
+                                    <input type="submit" class="btn btn-primary value=" Guardar" />
+
+
+
+
+
+                                </div>
+
+                            }
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="content-wrapper">
+                    <!-- Content Header (Page header) -->
+                    <section class="content-header">
+
+
+
+
+
+
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="box">
+                                    <div class="box-header">
+
+
+                                        <div class="box-tools">
+                                            <div class="input-group input-group-sm" style="width: 200px;">
+
+
+
+
+
+
+
+                                                <div class="input-group-btn">
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-header -->
+
+
+
+
+
+                                    <div class="box-body table-responsive no-padding">
+
+                                        @using (Html.BeginForm("Index", "Visitante", FormMethod.Post))
+                                        {
+                                            @Html.Label("Visitante")
+
+                                            @Html.TextBox("nombre")
+
+                                            <input type="submit" class="btn btn-success" value="Buscar" />
+
+                                            <br><br><br>
+                                            <table class="table table-bordered table-hover">
+
+
+                                                <thead>
+
+                                                    <tr>
+
+                                                        <td width="20%">@Html.LabelFor(p => Model[0].idtipo)  </td>
+
+
+                                                        <td width="30%">@Html.LabelFor(p => Model[0].nombre)  </td>
+
+
+                                                        <td width="20%">@Html.LabelFor(p => Model[0].dni)  </td>
+
+                                                        <td width="20%">Accion </td>
+
+                                                    </tr>
+
+                                                </thead>
+
+                                                <tbody>
+
+                                                    @foreach (var item in Model)
+                                                    {
+
+                                                        <tr>
+
+                                                            <td>@item.idtipo</td>
+                                                            <td>@item.nombre</td>
+
+                                                            <td>@item.dni</td>
+
+                                                            <td>
+
+
+
+                                                                <button type="button" onclick="Agregar(@item.idtipo)" class="glyphicon glyphicon-file btn btn-info" data-toggle="modal" data-target="#exampleModal"></button>
+
+
+                                                                @*<button type="button" onclick="Editar(@item.idtipo)" class="glyphicon glyphicon-edit btn btn-primary" data-toggle="modal" data-target="#exampleModalConfirmacion"></button>*@
+
+                                                          @*@Html.ActionLink(" ", "Agregar", "Visitante", null, new { @class = "glyphicon glyphicon-file btn btn-info" })*@
+
+
+                                                        @Html.ActionLink(" ", "Editar", "Visitante", new { id = @item.idtipo }, new { @class = "glyphicon glyphicon-edit btn btn-primary" })
+
+
+
+
+
+                                                                @Html.ActionLink(" ", "Eliminar", "Visitante", new { id = @item.idtipo }, new { @class = "glyphicon glyphicon-trash btn btn-danger", @onclick = "eliminar()" })
+
+
+
+
+
+
+
+                                                            </td>
+                                                        </tr>
+                                                    }
+
+                                                </tbody>
+
+                                            </table>
+
+
+
+                                        }
+
+
+
+                                        <script>
+
+                                            function eliminar() {
+
+
+
+                                                if (confirm("¿Desea Eliminar el Registro?") == 1) {
+
+
+
+                                                } else {
+
+                                                    event.preventDefault();
+
+                                                }
+                                            }
+
+                                        </script>
+
+                                   
+
+
+                                         @* agregar guardar los registros*@  
+
+                                        <script>
+
+                                            var frmAgregar = document.getElementById("frmAgregar");
+
+                                            frmAgregar.onsubmit = function (e) {
+
+                                                e.preventDefault();
+
+                                                if (confirm("¿Deseas Guardar los Cambios") == 1) {
+
+                                                    frmAgregar.submit();
+
+                                                }
+
+                                            }
+                                        </script>
+
+
+
+
+
+
+
+                                        <!-- /.box-body -->
+                                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.box -->
+                            </div>
+                        </div>
+                    </section>
+
+

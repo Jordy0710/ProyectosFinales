@@ -1,0 +1,195 @@
+﻿@using Proyecto.Models;
+@model List<RevelanteCLS>
+
+
+
+@{
+    ViewBag.Title = "";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+
+
+
+
+
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+
+
+                        <div class="box-tools">
+                            <div class="input-group input-group-sm" style="width: 200px;">
+
+
+
+
+
+
+
+                                <div class="input-group-btn">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-header -->
+
+
+
+
+
+                    <div class="box-body table-responsive no-padding">
+
+                        @using (Html.BeginForm("Index", "ConsultaRevelante", FormMethod.Post))
+                        {
+                            @Html.Label("Descripcion")
+
+                            @Html.TextBox("descripcion")
+
+                            <input type="submit" class="btn btn-success" value="Buscar" />
+
+                            <br><br><br>
+                            <table class="table table-bordered table-hover">
+
+
+                                <thead>
+
+                                    <tr>
+
+                                        <td width="5%">@Html.LabelFor(p => Model[0].idrevelante)  </td>
+
+
+                                        <td width="12%">@Html.LabelFor(p => Model[0].descripcion)  </td>
+
+
+                                        <td width="12%">@Html.LabelFor(p => Model[0].observacion)  </td>
+
+                                        <td width="10%">@Html.LabelFor(p => Model[0].nombrearea)  </td>
+
+                                        <td width="10%">@Html.LabelFor(p => Model[0].nombrevigilante)  </td>
+
+
+
+
+                                        <td width="9%">@Html.LabelFor(p => Model[0].hora)  </td>
+
+                                        <td width="12%">@Html.LabelFor(p => Model[0].fecha)  </td>
+
+
+
+                                        <td width="25%">Accion </td>
+
+
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    @foreach (var item in Model)
+                                    {
+
+                                        <tr>
+
+                                            <td>@item.idrevelante</td>
+                                            <td>@item.descripcion</td>
+
+                                            <td>@item.observacion</td>
+
+                                            <td>@item.nombrearea</td>
+                                            <td>@item.nombrevigilante</td>
+
+
+                                            <td>@item.hora</td>
+
+
+
+                                            <td>@item.fecha</td>
+
+
+                                            <td>
+
+
+
+
+                                                @Html.ActionLink("PDF", "generarPDF", "ConsultaRevelante", null, new { @class = "glyphicon glyphicon-file btn btn-danger" })
+
+
+                                                @Html.ActionLink("EXCEL", "Excel_Exportar", "ConsultaRevelante", null, new { @class = "glyphicon glyphicon-edit btn btn-success" })
+
+
+                                                @Html.ActionLink("CRISTAL", "cristal_reports", "ConsultaRevelante", null, new { @class = "glyphicon glyphicon-file btn btn-info" })
+
+
+
+
+
+
+
+
+
+
+
+
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+
+                            </table>
+
+
+
+                        }
+
+
+
+                        <script>
+
+                            function eliminar() {
+
+
+
+                                if (confirm("¿Desea Eliminar el Registro?") == 1) {
+
+
+
+                                } else {
+
+                                    event.preventDefault();
+
+                                }
+                            }
+
+                        </script>
+
+
+
+
+
+                        <!-- /.box-body -->
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+    </section>
+
+

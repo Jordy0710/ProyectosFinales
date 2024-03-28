@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="controlvisitanteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="Id_Area" />
+    </Key>
+    <Property Name="Id_Area" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Control_Visitante_Ocurrencias">
+    <Key>
+      <PropertyRef Name="Id_Control" />
+    </Key>
+    <Property Name="Id_Control" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="Motivo" Type="varchar" MaxLength="50" />
+    <Property Name="Id_Area" Type="int" />
+    <Property Name="Id_Vigilante" Type="int" />
+    <Property Name="Id_Visitante" Type="int" />
+    <Property Name="Hora" Type="varchar" MaxLength="50" />
+    <Property Name="Fecha" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Id_Empresa" />
+    </Key>
+    <Property Name="Id_Empresa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Revelante">
+    <Key>
+      <PropertyRef Name="Id_Revelante" />
+    </Key>
+    <Property Name="Id_Revelante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="Observacion" Type="varchar" MaxLength="50" />
+    <Property Name="Id_Area" Type="int" />
+    <Property Name="Id_Vigilante" Type="int" />
+    <Property Name="Hora" Type="varchar" MaxLength="50" />
+    <Property Name="Fecha" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idusuario" />
+    </Key>
+    <Property Name="idusuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="tipo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vigilante">
+    <Key>
+      <PropertyRef Name="Id_Vigilante" />
+    </Key>
+    <Property Name="Id_Vigilante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Dni" Type="varchar" MaxLength="50" />
+    <Property Name="Turno" Type="varchar" MaxLength="50" />
+    <Property Name="Id_Empresa" Type="int" />
+    <Property Name="idusuario" Type="int" />
+  </EntityType>
+  <EntityType Name="Visitante">
+    <Key>
+      <PropertyRef Name="Id_Visitante" />
+    </Key>
+    <Property Name="Id_Visitante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="dni" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Control_V__Id_Ar__5FB337D6">
+    <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+    <End Role="Control_Visitante_Ocurrencias" Type="Self.Control_Visitante_Ocurrencias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="Id_Area" />
+      </Principal>
+      <Dependent Role="Control_Visitante_Ocurrencias">
+        <PropertyRef Name="Id_Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Control_V__Id_Vi__60A75C0F">
+    <End Role="Vigilante" Type="Self.Vigilante" Multiplicity="0..1" />
+    <End Role="Control_Visitante_Ocurrencias" Type="Self.Control_Visitante_Ocurrencias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vigilante">
+        <PropertyRef Name="Id_Vigilante" />
+      </Principal>
+      <Dependent Role="Control_Visitante_Ocurrencias">
+        <PropertyRef Name="Id_Vigilante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Revelante__Id_Ar__59FA5E80">
+    <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+    <End Role="Revelante" Type="Self.Revelante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="Id_Area" />
+      </Principal>
+      <Dependent Role="Revelante">
+        <PropertyRef Name="Id_Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Revelante__Id_Vi__5AEE82B9">
+    <End Role="Vigilante" Type="Self.Vigilante" Multiplicity="0..1" />
+    <End Role="Revelante" Type="Self.Revelante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vigilante">
+        <PropertyRef Name="Id_Vigilante" />
+      </Principal>
+      <Dependent Role="Revelante">
+        <PropertyRef Name="Id_Vigilante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vigilante__Id_Em__4F7CD00D">
+    <End Role="Empresa" Type="Self.Empresa" Multiplicity="0..1" />
+    <End Role="Vigilante" Type="Self.Vigilante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id_Empresa" />
+      </Principal>
+      <Dependent Role="Vigilante">
+        <PropertyRef Name="Id_Empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Control_Visitante_Ocurrencias_Visitante">
+    <End Role="Visitante" Type="Self.Visitante" Multiplicity="0..1" />
+    <End Role="Control_Visitante_Ocurrencias" Type="Self.Control_Visitante_Ocurrencias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Visitante">
+        <PropertyRef Name="Id_Visitante" />
+      </Principal>
+      <Dependent Role="Control_Visitante_Ocurrencias">
+        <PropertyRef Name="Id_Visitante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vigilante_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Vigilante" Type="Self.Vigilante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="Vigilante">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="controlvisitanteModelStoreContainer">
+    <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Control_Visitante_Ocurrencias" EntityType="Self.Control_Visitante_Ocurrencias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empresa" EntityType="Self.Empresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Revelante" EntityType="Self.Revelante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vigilante" EntityType="Self.Vigilante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Visitante" EntityType="Self.Visitante" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Control_V__Id_Ar__5FB337D6" Association="Self.FK__Control_V__Id_Ar__5FB337D6">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Control_Visitante_Ocurrencias" EntitySet="Control_Visitante_Ocurrencias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Control_V__Id_Vi__60A75C0F" Association="Self.FK__Control_V__Id_Vi__60A75C0F">
+      <End Role="Vigilante" EntitySet="Vigilante" />
+      <End Role="Control_Visitante_Ocurrencias" EntitySet="Control_Visitante_Ocurrencias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Revelante__Id_Ar__59FA5E80" Association="Self.FK__Revelante__Id_Ar__59FA5E80">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Revelante" EntitySet="Revelante" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Revelante__Id_Vi__5AEE82B9" Association="Self.FK__Revelante__Id_Vi__5AEE82B9">
+      <End Role="Vigilante" EntitySet="Vigilante" />
+      <End Role="Revelante" EntitySet="Revelante" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vigilante__Id_Em__4F7CD00D" Association="Self.FK__Vigilante__Id_Em__4F7CD00D">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Vigilante" EntitySet="Vigilante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Control_Visitante_Ocurrencias_Visitante" Association="Self.FK_Control_Visitante_Ocurrencias_Visitante">
+      <End Role="Visitante" EntitySet="Visitante" />
+      <End Role="Control_Visitante_Ocurrencias" EntitySet="Control_Visitante_Ocurrencias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vigilante_Usuario" Association="Self.FK_Vigilante_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Vigilante" EntitySet="Vigilante" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

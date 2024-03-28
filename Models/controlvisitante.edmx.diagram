@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1db16dd27add47ecbfd79a528b5995be" Name="Diagram1">
+        <EntityTypeShape EntityType="controlvisitanteModel.Area" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlvisitanteModel.Control_Visitante_Ocurrencias" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlvisitanteModel.Empresa" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlvisitanteModel.Revelante" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlvisitanteModel.Usuario" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlvisitanteModel.Vigilante" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlvisitanteModel.Visitante" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="controlvisitanteModel.FK__Control_V__Id_Ar__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="controlvisitanteModel.FK__Revelante__Id_Ar__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="controlvisitanteModel.FK__Control_V__Id_Vi__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="controlvisitanteModel.FK_Control_Visitante_Ocurrencias_Visitante" ManuallyRouted="false" />
+        <AssociationConnector Association="controlvisitanteModel.FK__Vigilante__Id_Em__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="controlvisitanteModel.FK__Revelante__Id_Vi__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="controlvisitanteModel.FK_Vigilante_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

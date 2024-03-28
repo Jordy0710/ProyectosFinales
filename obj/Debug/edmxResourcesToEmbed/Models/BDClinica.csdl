@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="clinicadentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CITAS">
+    <Key>
+      <PropertyRef Name="N_Cita" />
+    </Key>
+    <Property Name="N_Cita" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_cita" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Hora" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_paciente" Type="Int32" />
+    <Property Name="Consulta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Consulta" Type="Int32" />
+    <NavigationProperty Name="CONSULTA_PROGRAMADO" Relationship="Self.FK_CITAS_PACIENTE" FromRole="CITAS" ToRole="CONSULTA_PROGRAMADO" />
+    <NavigationProperty Name="PACIENTE" Relationship="Self.FK_CITAS_PACIENTE1" FromRole="CITAS" ToRole="PACIENTE" />
+  </EntityType>
+  <EntityType Name="CONSULTA_PROGRAMADO">
+    <Key>
+      <PropertyRef Name="Id_Consulta" />
+    </Key>
+    <Property Name="Id_Consulta" Type="Int32" Nullable="false" />
+    <Property Name="Consultorio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Medico" Type="Int32" />
+    <Property Name="F_Inicio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Hora_Inicio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Hora_Terminado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CITAS" Relationship="Self.FK_CITAS_PACIENTE" FromRole="CONSULTA_PROGRAMADO" ToRole="CITAS" />
+    <NavigationProperty Name="MEDICO" Relationship="Self.FK__Consulta___Id_Me__4AB81AF0" FromRole="CONSULTA_PROGRAMADO" ToRole="MEDICO" />
+  </EntityType>
+  <EntityType Name="DOCUMENTO">
+    <Key>
+      <PropertyRef Name="Id_Documento" />
+    </Key>
+    <Property Name="Id_Documento" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PAGO" Relationship="Self.FK__PAGO__Id_Documen__03F0984C" FromRole="DOCUMENTO" ToRole="PAGO" />
+  </EntityType>
+  <EntityType Name="ESPECIALIDAD">
+    <Key>
+      <PropertyRef Name="Id_Especialidad" />
+    </Key>
+    <Property Name="Id_Especialidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MEDICO" Relationship="Self.FK_MEDICO_ESPECIALIDAD" FromRole="ESPECIALIDAD" ToRole="MEDICO" />
+  </EntityType>
+  <EntityType Name="HISTORIAL">
+    <Key>
+      <PropertyRef Name="N_Historial" />
+    </Key>
+    <Property Name="N_Historial" Type="Int32" Nullable="false" />
+    <Property Name="Id_paciente" Type="Int32" />
+    <Property Name="Fuma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Arterial" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Habito" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tratamiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Observacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="F_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PACIENTE" Relationship="Self.FK__HISTORIAL__Id_pa__571DF1D5" FromRole="HISTORIAL" ToRole="PACIENTE" />
+  </EntityType>
+  <EntityType Name="MEDICO">
+    <Key>
+      <PropertyRef Name="Id_Medico" />
+    </Key>
+    <Property Name="Id_Medico" Type="Int32" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Especialidad" Type="Int32" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CONSULTA_PROGRAMADO" Relationship="Self.FK__Consulta___Id_Me__4AB81AF0" FromRole="MEDICO" ToRole="CONSULTA_PROGRAMADO" />
+    <NavigationProperty Name="ESPECIALIDAD" Relationship="Self.FK_MEDICO_ESPECIALIDAD" FromRole="MEDICO" ToRole="ESPECIALIDAD" />
+    <NavigationProperty Name="RECETA" Relationship="Self.FK__RECETA__Id_Medic__2FCF1A8A" FromRole="MEDICO" ToRole="RECETA" />
+    <NavigationProperty Name="TRATAMIENTO" Relationship="Self.FK__TRATAMIEN__Id_Me__7E37BEF6" FromRole="MEDICO" ToRole="TRATAMIENTO" />
+  </EntityType>
+  <EntityType Name="PACIENTE">
+    <Key>
+      <PropertyRef Name="Id_Paciente" />
+    </Key>
+    <Property Name="Id_Paciente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Tipo" Type="Int32" />
+    <Property Name="Numero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CITAS" Relationship="Self.FK_CITAS_PACIENTE1" FromRole="PACIENTE" ToRole="CITAS" />
+    <NavigationProperty Name="HISTORIAL" Relationship="Self.FK__HISTORIAL__Id_pa__571DF1D5" FromRole="PACIENTE" ToRole="HISTORIAL" />
+    <NavigationProperty Name="RECETA" Relationship="Self.FK__RECETA__Id_Pacie__2EDAF651" FromRole="PACIENTE" ToRole="RECETA" />
+    <NavigationProperty Name="TRATAMIENTO" Relationship="Self.FK__TRATAMIEN__Id_pa__7D439ABD" FromRole="PACIENTE" ToRole="TRATAMIENTO" />
+    <NavigationProperty Name="TIPO" Relationship="Self.FK_PACIENTE_TIPO" FromRole="PACIENTE" ToRole="TIPO" />
+  </EntityType>
+  <EntityType Name="PAGO">
+    <Key>
+      <PropertyRef Name="N_Pago" />
+    </Key>
+    <Property Name="N_Pago" Type="Int32" Nullable="false" />
+    <Property Name="Serie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Documento" Type="Int32" />
+    <Property Name="Fecha_Emision" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="N_Tratamiento" Type="Int32" />
+    <Property Name="id_usuario" Type="Int32" />
+    <Property Name="Total" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="DOCUMENTO" Relationship="Self.FK__PAGO__Id_Documen__03F0984C" FromRole="PAGO" ToRole="DOCUMENTO" />
+    <NavigationProperty Name="USUARIOS" Relationship="Self.FK__PAGO__id_usuario__05D8E0BE" FromRole="PAGO" ToRole="USUARIOS" />
+    <NavigationProperty Name="TRATAMIENTO" Relationship="Self.FK__PAGO__N_Tratamie__04E4BC85" FromRole="PAGO" ToRole="TRATAMIENTO" />
+  </EntityType>
+  <EntityType Name="RECETA">
+    <Key>
+      <PropertyRef Name="Id_Receta" />
+    </Key>
+    <Property Name="Id_Receta" Type="Int32" Nullable="false" />
+    <Property Name="Id_Paciente" Type="Int32" />
+    <Property Name="Id_Medico" Type="Int32" />
+    <Property Name="N_Tratamiento" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MEDICO" Relationship="Self.FK__RECETA__Id_Medic__2FCF1A8A" FromRole="RECETA" ToRole="MEDICO" />
+    <NavigationProperty Name="PACIENTE" Relationship="Self.FK__RECETA__Id_Pacie__2EDAF651" FromRole="RECETA" ToRole="PACIENTE" />
+    <NavigationProperty Name="TRATAMIENTO" Relationship="Self.FK__RECETA__N_Tratam__30C33EC3" FromRole="RECETA" ToRole="TRATAMIENTO" />
+  </EntityType>
+  <EntityType Name="SERVICIOS">
+    <Key>
+      <PropertyRef Name="ID_Servicio" />
+    </Key>
+    <Property Name="ID_Servicio" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="TRATAMIENTO" Relationship="Self.FK__TRATAMIEN__Id_Se__7F2BE32F" FromRole="SERVICIOS" ToRole="TRATAMIENTO" />
+  </EntityType>
+  <EntityType Name="TIPO">
+    <Key>
+      <PropertyRef Name="Id_Tipo" />
+    </Key>
+    <Property Name="Id_Tipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PACIENTE" Relationship="Self.FK_PACIENTE_TIPO" FromRole="TIPO" ToRole="PACIENTE" />
+  </EntityType>
+  <EntityType Name="TRATAMIENTO">
+    <Key>
+      <PropertyRef Name="N_Tratamiento" />
+    </Key>
+    <Property Name="N_Tratamiento" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_paciente" Type="Int32" />
+    <Property Name="Id_Medico" Type="Int32" />
+    <Property Name="Id_Servicio" Type="Int32" />
+    <Property Name="Pieza_Dental" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Diagnostico" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Observacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MEDICO" Relationship="Self.FK__TRATAMIEN__Id_Me__7E37BEF6" FromRole="TRATAMIENTO" ToRole="MEDICO" />
+    <NavigationProperty Name="PACIENTE" Relationship="Self.FK__TRATAMIEN__Id_pa__7D439ABD" FromRole="TRATAMIENTO" ToRole="PACIENTE" />
+    <NavigationProperty Name="PAGO" Relationship="Self.FK__PAGO__N_Tratamie__04E4BC85" FromRole="TRATAMIENTO" ToRole="PAGO" />
+    <NavigationProperty Name="RECETA" Relationship="Self.FK__RECETA__N_Tratam__30C33EC3" FromRole="TRATAMIENTO" ToRole="RECETA" />
+    <NavigationProperty Name="SERVICIOS" Relationship="Self.FK__TRATAMIEN__Id_Se__7F2BE32F" FromRole="TRATAMIENTO" ToRole="SERVICIOS" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Modo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PAGO" Relationship="Self.FK__PAGO__id_usuario__05D8E0BE" FromRole="USUARIOS" ToRole="PAGO" />
+  </EntityType>
+  <Association Name="FK_CITAS_PACIENTE">
+    <End Role="CONSULTA_PROGRAMADO" Type="Self.CONSULTA_PROGRAMADO" Multiplicity="0..1" />
+    <End Role="CITAS" Type="Self.CITAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CONSULTA_PROGRAMADO">
+        <PropertyRef Name="Id_Consulta" />
+      </Principal>
+      <Dependent Role="CITAS">
+        <PropertyRef Name="Id_Consulta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CITAS_PACIENTE1">
+    <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="0..1" />
+    <End Role="CITAS" Type="Self.CITAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACIENTE">
+        <PropertyRef Name="Id_Paciente" />
+      </Principal>
+      <Dependent Role="CITAS">
+        <PropertyRef Name="Id_paciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Consulta___Id_Me__4AB81AF0">
+    <End Role="MEDICO" Type="Self.MEDICO" Multiplicity="0..1" />
+    <End Role="CONSULTA_PROGRAMADO" Type="Self.CONSULTA_PROGRAMADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MEDICO">
+        <PropertyRef Name="Id_Medico" />
+      </Principal>
+      <Dependent Role="CONSULTA_PROGRAMADO">
+        <PropertyRef Name="Id_Medico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PAGO__Id_Documen__03F0984C">
+    <End Role="DOCUMENTO" Type="Self.DOCUMENTO" Multiplicity="0..1" />
+    <End Role="PAGO" Type="Self.PAGO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DOCUMENTO">
+        <PropertyRef Name="Id_Documento" />
+      </Principal>
+      <Dependent Role="PAGO">
+        <PropertyRef Name="Id_Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEDICO_ESPECIALIDAD">
+    <End Role="ESPECIALIDAD" Type="Self.ESPECIALIDAD" Multiplicity="0..1" />
+    <End Role="MEDICO" Type="Self.MEDICO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESPECIALIDAD">
+        <PropertyRef Name="Id_Especialidad" />
+      </Principal>
+      <Dependent Role="MEDICO">
+        <PropertyRef Name="Id_Especialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HISTORIAL__Id_pa__571DF1D5">
+    <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="0..1" />
+    <End Role="HISTORIAL" Type="Self.HISTORIAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACIENTE">
+        <PropertyRef Name="Id_Paciente" />
+      </Principal>
+      <Dependent Role="HISTORIAL">
+        <PropertyRef Name="Id_paciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RECETA__Id_Medic__2FCF1A8A">
+    <End Role="MEDICO" Type="Self.MEDICO" Multiplicity="0..1" />
+    <End Role="RECETA" Type="Self.RECETA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MEDICO">
+        <PropertyRef Name="Id_Medico" />
+      </Principal>
+      <Dependent Role="RECETA">
+        <PropertyRef Name="Id_Medico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRATAMIEN__Id_Me__7E37BEF6">
+    <End Role="MEDICO" Type="Self.MEDICO" Multiplicity="0..1" />
+    <End Role="TRATAMIENTO" Type="Self.TRATAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MEDICO">
+        <PropertyRef Name="Id_Medico" />
+      </Principal>
+      <Dependent Role="TRATAMIENTO">
+        <PropertyRef Name="Id_Medico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RECETA__Id_Pacie__2EDAF651">
+    <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="0..1" />
+    <End Role="RECETA" Type="Self.RECETA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACIENTE">
+        <PropertyRef Name="Id_Paciente" />
+      </Principal>
+      <Dependent Role="RECETA">
+        <PropertyRef Name="Id_Paciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRATAMIEN__Id_pa__7D439ABD">
+    <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="0..1" />
+    <End Role="TRATAMIENTO" Type="Self.TRATAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PACIENTE">
+        <PropertyRef Name="Id_Paciente" />
+      </Principal>
+      <Dependent Role="TRATAMIENTO">
+        <PropertyRef Name="Id_paciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PACIENTE_TIPO">
+    <End Role="TIPO" Type="Self.TIPO" Multiplicity="0..1" />
+    <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO">
+        <PropertyRef Name="Id_Tipo" />
+      </Principal>
+      <Dependent Role="PACIENTE">
+        <PropertyRef Name="Id_Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PAGO__id_usuario__05D8E0BE">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="PAGO" Type="Self.PAGO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="PAGO">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PAGO__N_Tratamie__04E4BC85">
+    <End Role="TRATAMIENTO" Type="Self.TRATAMIENTO" Multiplicity="0..1" />
+    <End Role="PAGO" Type="Self.PAGO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRATAMIENTO">
+        <PropertyRef Name="N_Tratamiento" />
+      </Principal>
+      <Dependent Role="PAGO">
+        <PropertyRef Name="N_Tratamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RECETA__N_Tratam__30C33EC3">
+    <End Role="TRATAMIENTO" Type="Self.TRATAMIENTO" Multiplicity="0..1" />
+    <End Role="RECETA" Type="Self.RECETA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRATAMIENTO">
+        <PropertyRef Name="N_Tratamiento" />
+      </Principal>
+      <Dependent Role="RECETA">
+        <PropertyRef Name="N_Tratamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRATAMIEN__Id_Se__7F2BE32F">
+    <End Role="SERVICIOS" Type="Self.SERVICIOS" Multiplicity="0..1" />
+    <End Role="TRATAMIENTO" Type="Self.TRATAMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SERVICIOS">
+        <PropertyRef Name="ID_Servicio" />
+      </Principal>
+      <Dependent Role="TRATAMIENTO">
+        <PropertyRef Name="Id_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="clinicadentalEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CITAS" EntityType="Self.CITAS" />
+    <EntitySet Name="CONSULTA_PROGRAMADO" EntityType="Self.CONSULTA_PROGRAMADO" />
+    <EntitySet Name="DOCUMENTO" EntityType="Self.DOCUMENTO" />
+    <EntitySet Name="ESPECIALIDAD" EntityType="Self.ESPECIALIDAD" />
+    <EntitySet Name="HISTORIAL" EntityType="Self.HISTORIAL" />
+    <EntitySet Name="MEDICO" EntityType="Self.MEDICO" />
+    <EntitySet Name="PACIENTE" EntityType="Self.PACIENTE" />
+    <EntitySet Name="PAGO" EntityType="Self.PAGO" />
+    <EntitySet Name="RECETA" EntityType="Self.RECETA" />
+    <EntitySet Name="SERVICIOS" EntityType="Self.SERVICIOS" />
+    <EntitySet Name="TIPO" EntityType="Self.TIPO" />
+    <EntitySet Name="TRATAMIENTO" EntityType="Self.TRATAMIENTO" />
+    <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" />
+    <AssociationSet Name="FK_CITAS_PACIENTE" Association="Self.FK_CITAS_PACIENTE">
+      <End Role="CONSULTA_PROGRAMADO" EntitySet="CONSULTA_PROGRAMADO" />
+      <End Role="CITAS" EntitySet="CITAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CITAS_PACIENTE1" Association="Self.FK_CITAS_PACIENTE1">
+      <End Role="PACIENTE" EntitySet="PACIENTE" />
+      <End Role="CITAS" EntitySet="CITAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Consulta___Id_Me__4AB81AF0" Association="Self.FK__Consulta___Id_Me__4AB81AF0">
+      <End Role="MEDICO" EntitySet="MEDICO" />
+      <End Role="CONSULTA_PROGRAMADO" EntitySet="CONSULTA_PROGRAMADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PAGO__Id_Documen__03F0984C" Association="Self.FK__PAGO__Id_Documen__03F0984C">
+      <End Role="DOCUMENTO" EntitySet="DOCUMENTO" />
+      <End Role="PAGO" EntitySet="PAGO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEDICO_ESPECIALIDAD" Association="Self.FK_MEDICO_ESPECIALIDAD">
+      <End Role="ESPECIALIDAD" EntitySet="ESPECIALIDAD" />
+      <End Role="MEDICO" EntitySet="MEDICO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HISTORIAL__Id_pa__571DF1D5" Association="Self.FK__HISTORIAL__Id_pa__571DF1D5">
+      <End Role="PACIENTE" EntitySet="PACIENTE" />
+      <End Role="HISTORIAL" EntitySet="HISTORIAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RECETA__Id_Medic__2FCF1A8A" Association="Self.FK__RECETA__Id_Medic__2FCF1A8A">
+      <End Role="MEDICO" EntitySet="MEDICO" />
+      <End Role="RECETA" EntitySet="RECETA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRATAMIEN__Id_Me__7E37BEF6" Association="Self.FK__TRATAMIEN__Id_Me__7E37BEF6">
+      <End Role="MEDICO" EntitySet="MEDICO" />
+      <End Role="TRATAMIENTO" EntitySet="TRATAMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RECETA__Id_Pacie__2EDAF651" Association="Self.FK__RECETA__Id_Pacie__2EDAF651">
+      <End Role="PACIENTE" EntitySet="PACIENTE" />
+      <End Role="RECETA" EntitySet="RECETA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRATAMIEN__Id_pa__7D439ABD" Association="Self.FK__TRATAMIEN__Id_pa__7D439ABD">
+      <End Role="PACIENTE" EntitySet="PACIENTE" />
+      <End Role="TRATAMIENTO" EntitySet="TRATAMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PACIENTE_TIPO" Association="Self.FK_PACIENTE_TIPO">
+      <End Role="TIPO" EntitySet="TIPO" />
+      <End Role="PACIENTE" EntitySet="PACIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PAGO__id_usuario__05D8E0BE" Association="Self.FK__PAGO__id_usuario__05D8E0BE">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PAGO" EntitySet="PAGO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PAGO__N_Tratamie__04E4BC85" Association="Self.FK__PAGO__N_Tratamie__04E4BC85">
+      <End Role="TRATAMIENTO" EntitySet="TRATAMIENTO" />
+      <End Role="PAGO" EntitySet="PAGO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RECETA__N_Tratam__30C33EC3" Association="Self.FK__RECETA__N_Tratam__30C33EC3">
+      <End Role="TRATAMIENTO" EntitySet="TRATAMIENTO" />
+      <End Role="RECETA" EntitySet="RECETA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRATAMIEN__Id_Se__7F2BE32F" Association="Self.FK__TRATAMIEN__Id_Se__7F2BE32F">
+      <End Role="SERVICIOS" EntitySet="SERVICIOS" />
+      <End Role="TRATAMIENTO" EntitySet="TRATAMIENTO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

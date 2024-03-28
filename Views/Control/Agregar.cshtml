@@ -1,0 +1,261 @@
+﻿
+
+@using Proyecto.Models;
+@model ControlCLS
+
+
+@{
+    ViewBag.Title = "Agregar";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+
+
+    List<SelectListItem> listaarea = (List<SelectListItem>)ViewBag.listaarea;
+    //************************************************************************************
+    List<SelectListItem> listavigilante = (List<SelectListItem>)ViewBag.listavigilante;
+
+
+    List<SelectListItem> listavisitante = (List<SelectListItem>)ViewBag.listavisitante;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+<div class="content-wrapper">
+
+
+
+
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title"></h3>
+
+
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+
+    <!-- dividir ventana -->
+
+    @using (Html.BeginForm("Agregar", "Control", FormMethod.Post, new { @id = "frmAgregar" }))
+
+
+            {
+
+
+        <div class="form-group">
+
+
+
+
+            @Html.LabelFor(p => p.descripcion)
+
+            @Html.TextBoxFor(p => p.descripcion, new { @class = "form-control" })
+
+            @Html.ValidationMessage("descripcion", new { @class = "text-danger" })
+
+
+
+
+
+
+
+        </div>
+
+
+
+                <div class="form-group">
+
+
+
+                    @Html.LabelFor(p => p.motivo)
+
+                    @Html.TextBoxFor(p => p.motivo, new { @class = "form-control" })
+
+                    @Html.ValidationMessage("motivo", new { @class = "text-danger" })
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <div class="form-group">
+
+
+                    @Html.LabelFor(p => p.idarea)
+
+
+                    @Html.DropDownList("idarea", listaarea, null, new { @class = "form-control" })
+
+
+                    @Html.ValidationMessage("idarea", new { @class = "text-danger" })
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+                            <div class="form-group">
+
+
+                                @Html.LabelFor(p => p.idvigilante)
+
+
+                                @Html.DropDownList("idvigilante", listavigilante, null, new { @class = "form-control" })
+
+
+                                @Html.ValidationMessage("idvigilante", new { @class = "text-danger" })
+
+
+
+
+                            </div>
+
+                     <!-- ************************************* -->
+
+
+        
+
+
+                                        <div class="form-group">
+
+
+                                            @Html.LabelFor(p => p.idvisitante)
+
+
+                                            @Html.DropDownList("idvisitante", listavisitante, null, new { @class = "form-control" })
+
+
+                                            @Html.ValidationMessage("idvisitante", new { @class = "text-danger" })
+
+
+
+
+
+
+
+                                        </div>
+
+
+
+
+                                        <div class="form-group">
+
+
+
+                                            @Html.LabelFor(p => p.hora)
+
+                                            @Html.TextBoxFor(p => p.hora, new { @class = "form-control" })
+
+                                            @Html.ValidationMessage("hora", new { @class = "text-danger" })
+
+
+
+
+
+
+
+
+                                        </div>
+
+
+
+
+                                        <div class="form-group">
+
+
+                                            @Html.LabelFor(p => p.fecha)
+                                            @Html.EditorFor(p => p.fecha, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessage("fecha", new { @class = "text-danger" })
+
+
+
+
+
+
+
+                                        </div>
+
+                                        <!-- /.row -->
+
+                                        <div class="box-footer">
+
+                                            <input type="submit" class="btn btn-primary value=" Guardar" />
+
+
+                                            @Html.ActionLink("Regresar", "Index", "Control", null, new { @class = "btn btn-danger" })
+
+
+                                        </div>
+
+
+                                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+                                        }
+
+
+
+                                        <!-- /.box-body -->
+                                        <!-- /.box -->
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        <!-- /.box -->
+                        </div>
+        <!-- /.col (right) -->
+                </div>
+    <!-- /.row -->
+    <!-- /.content -->
+
+</div>
+
+
+<script>
+
+    var frmAgregar= document.getElementById("frmAgregar");
+
+    frmAgregar.onsubmit = function (e) {
+
+        e.preventDefault();
+
+        if(confirm("¿Deseas Guardar los Cambios") == 1) {
+
+            frmAgregar.submit();
+
+        }
+
+    }
+</script>

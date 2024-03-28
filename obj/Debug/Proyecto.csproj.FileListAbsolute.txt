@@ -1,0 +1,208 @@
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\EntityFramework.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Helpers.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Mvc.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Razor.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.Razor.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\EntityFramework.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Razor.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.Razor.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Helpers.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Mvc.xml
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\Usuario\Desktop\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\EntityFramework.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Razor.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Webpages.Razor.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Helpers.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\bin\System.Web.Mvc.xml
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\Usuario\Desktop\PROBANDO\ddddddddddddddddddddd\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.Shared.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Usuario\Desktop\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\stdole.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.Shared.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\stdole.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\Usuario\Desktop\Nueva carpeta (5)\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.Shared.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\stdole.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\itextsharp.dll
+C:\Users\Usuario\Desktop\Control Visitante Incidencia Asp.Net MVC C#\Asp.Net C# MVC\Asp.Net C# MVC\Asp.Net  MVC\Proyecto\Proyecto\bin\EPPlus.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\W10\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.AssemblyReference.cache
+C:\Users\W10\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\W10\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CopyComplete
+C:\Users\W10\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\W10\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\csc.exe
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\vbc.exe
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\Proyecto.dll.config
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\Proyecto.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\bin\Proyecto.pdb
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.AssemblyReference.cache
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CopyComplete
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\W10\Desktop\Cibertec\Experiencias Formativas III\Proyecto\Proyecto\obj\Debug\Proyecto.pdb

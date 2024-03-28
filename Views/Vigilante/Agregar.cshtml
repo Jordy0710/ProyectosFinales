@@ -1,0 +1,174 @@
+﻿
+
+@using Proyecto.Models;
+@model VigilanteCLS
+
+
+@{
+    ViewBag.Title = "Agregar";
+
+
+    List<SelectListItem> listaempresa = (List<SelectListItem>)ViewBag.listaempresa;
+    //************************************************************************************
+    List<SelectListItem> listausuario = (List<SelectListItem>)ViewBag.listausuario;
+
+}
+
+<div class="content-wrapper">
+
+
+
+
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title"></h3>
+
+
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+
+                        <!-- dividir ventana -->
+
+                        @using (Html.BeginForm("Agregar", "Vigilante", FormMethod.Post, new { @id = "frmAgregar" }))
+
+
+                        {
+
+
+                            <div class="form-group">
+
+
+
+
+                                @Html.LabelFor(p => p.nombre)
+
+                                @Html.TextBoxFor(p => p.nombre, new { @class = "form-control" })
+
+                                @Html.ValidationMessage("nombre", new { @class = "text-danger" })
+
+
+
+
+
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+
+
+                                @Html.LabelFor(p => p.dni)
+
+                                @Html.TextBoxFor(p => p.dni, new { @class = "form-control" })
+
+                                @Html.ValidationMessage("dni", new { @class = "text-danger" })
+
+
+                            </div>
+
+
+                            <div class="form-group">
+
+
+
+                                @Html.LabelFor(p => p.turno)
+
+                                @Html.TextBoxFor(p => p.turno, new { @class = "form-control" })
+
+                                @Html.ValidationMessage("turno", new { @class = "text-danger" })
+
+
+                            </div>
+
+                            <div class="form-group">
+
+
+                                @Html.LabelFor(p => p.idempresa)
+
+
+                                @Html.DropDownList("idempresa", listaempresa, null, new { @class = "form-control" })
+
+
+                                @Html.ValidationMessage("idempresa", new { @class = "text-danger" })
+
+
+                            </div>
+
+                            <div class="form-group">
+
+
+                                @Html.LabelFor(p => p.idusuario)
+
+
+                                @Html.DropDownList("idusuario", listausuario, null, new { @class = "form-control" })
+
+
+                                @Html.ValidationMessage("idusuario", new { @class = "text-danger" })
+
+                            </div>
+
+            <!-- /.row -->
+
+                            <div class="box-footer">
+
+                                <input type="submit" class="btn btn-primary value=" Guardar" />
+
+                                @Html.ActionLink("Regresar", "Index", "Vigilante", null, new { @class = "btn btn-danger" })
+
+
+
+
+                            </div>
+
+
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+                        }
+
+
+
+                        <!-- /.box-body -->
+                        <!-- /.box -->
+
+
+
+
+                    </div>
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col (right) -->
+        </div>
+        <!-- /.row -->
+        </section>
+        <!-- /.content -->
+    </div>
+
+
+    <script>
+
+    var frmAgregar= document.getElementById("frmAgregar");
+
+    frmAgregar.onsubmit = function (e) {
+
+        e.preventDefault();
+
+        if(confirm("¿Deseas Guardar los Cambios") == 1) {
+
+            frmAgregar.submit();
+
+        }
+
+    }
+    </script>
+

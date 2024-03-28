@@ -1,0 +1,161 @@
+﻿
+
+@using Proyecto.Models;
+@model VisitanteCLS
+
+
+@{
+    ViewBag.Title = "Editar";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+
+
+
+<div class="content-wrapper">
+
+
+
+
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title"></h3>
+
+
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+
+                        <!-- dividir ventana -->
+
+                        @using (Html.BeginForm("Editar", "Visitante", FormMethod.Post, new { @id = "frmEditar" }))
+
+
+                        {
+
+
+                            <div class="form-group">
+
+
+
+
+                                @Html.LabelFor(p => p.idtipo)
+
+                                @Html.TextBoxFor(p => p.idtipo, new { @class = "form-control", @readOnly = true })
+
+                                @Html.ValidationMessage("idtipo", new { @class = "text-danger" })
+
+
+
+
+
+
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+
+
+                                @Html.LabelFor(p => p.nombre)
+
+                                @Html.TextBoxFor(p => p.nombre, new { @class = "form-control" })
+
+                                @Html.ValidationMessage("nombre", new { @class = "text-danger" })
+
+
+
+
+
+
+
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+
+
+                                @Html.LabelFor(p => p.dni)
+
+                                @Html.TextBoxFor(p => p.dni, new { @class = "form-control" })
+
+                                @Html.ValidationMessage("dni", new { @class = "text-danger" })
+
+
+
+
+
+
+
+
+                            </div>
+            <!-- /.row -->
+
+                            <div class="box-footer">
+
+                                <input type="submit" class="btn btn-primary value=" Guardar" />
+
+
+                                @Html.ActionLink("Regresar", "Index", "Visitante", null, new { @class = "btn btn-danger" })
+
+
+                            </div>
+
+
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+                        }
+
+
+
+                        <!-- /.box-body -->
+                        <!-- /.box -->
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col (right) -->
+    </div>
+    <!-- /.row -->
+    <!-- /.content -->
+</div>
+
+
+<script>
+
+    var frmAgregar = document.getElementById("frmEditar");
+
+    frmAgregar.onsubmit = function (e) {
+
+        e.preventDefault();
+
+        if(confirm("¿Deseas Guardar los Cambios") == 1) {
+
+            frmAgregar.submit();
+
+        }
+
+    }
+</script>

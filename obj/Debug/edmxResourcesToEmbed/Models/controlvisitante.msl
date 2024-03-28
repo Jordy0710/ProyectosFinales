@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="controlvisitanteModelStoreContainer" CdmEntityContainer="controlvisitanteEntities3">
+    <EntitySetMapping Name="Area">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="Id_Area" ColumnName="Id_Area" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Control_Visitante_Ocurrencias">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Control_Visitante_Ocurrencias">
+        <MappingFragment StoreEntitySet="Control_Visitante_Ocurrencias">
+          <ScalarProperty Name="Id_Control" ColumnName="Id_Control" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Id_Area" ColumnName="Id_Area" />
+          <ScalarProperty Name="Id_Vigilante" ColumnName="Id_Vigilante" />
+          <ScalarProperty Name="Id_Visitante" ColumnName="Id_Visitante" />
+          <ScalarProperty Name="Hora" ColumnName="Hora" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresa">
+          <ScalarProperty Name="Id_Empresa" ColumnName="Id_Empresa" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Revelante">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Revelante">
+        <MappingFragment StoreEntitySet="Revelante">
+          <ScalarProperty Name="Id_Revelante" ColumnName="Id_Revelante" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Id_Area" ColumnName="Id_Area" />
+          <ScalarProperty Name="Id_Vigilante" ColumnName="Id_Vigilante" />
+          <ScalarProperty Name="Hora" ColumnName="Hora" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vigilante">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Vigilante">
+        <MappingFragment StoreEntitySet="Vigilante">
+          <ScalarProperty Name="Id_Vigilante" ColumnName="Id_Vigilante" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Dni" ColumnName="Dni" />
+          <ScalarProperty Name="Turno" ColumnName="Turno" />
+          <ScalarProperty Name="Id_Empresa" ColumnName="Id_Empresa" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visitante">
+      <EntityTypeMapping TypeName="controlvisitanteModel.Visitante">
+        <MappingFragment StoreEntitySet="Visitante">
+          <ScalarProperty Name="Id_Visitante" ColumnName="Id_Visitante" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
